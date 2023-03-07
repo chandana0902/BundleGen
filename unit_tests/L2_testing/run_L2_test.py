@@ -30,10 +30,12 @@ parse.add_argument("-t")
 parse.add_argument("-a")
 parse.add_argument("-m")
 args = parse.parse_args()
+
 if args.t:
     platform_template = args.t
 else:
     platform_template = "rpi3_reference_vc4_dunfell"
+
 oci_images_list = os.listdir("oci_images")
 if (len(oci_images_list)) == 0:
     logger.error("No oci_image was present inside oci_images folder")
