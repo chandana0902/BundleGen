@@ -1,5 +1,5 @@
 {
-    "platformName": "rpi3_reference",
+    "platformName": "rpi4_reference",
     "os": "linux",
     "arch": {
         "arch": "arm",
@@ -188,6 +188,10 @@
             {
                 "src": "/usr/lib/libessos.so.0",
                 "dst": "/usr/lib/libessos.so.0"
+            },
+            {
+                "src": "/usr/lib/dri/swrast_dri.so",
+                "dst": "/usr/lib/dri/swrast_dri.so"
             }
         ]
     },
